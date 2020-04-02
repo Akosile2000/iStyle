@@ -5,16 +5,7 @@ import { VendorLoginComponent } from './vendor-login/vendor-login.component';
 
 
 const routes: Routes = [
-  {
-    path: '',
-    pathMatch: 'full',
-    component: UserLoginComponent
-  },  
-  {
-    path: ':VendorLogin',
-    redirectTo: 'VendorLogin',
-    component: VendorLoginComponent
-  }
+ 
 ];
 
 @NgModule({

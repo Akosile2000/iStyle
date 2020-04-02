@@ -1,0 +1,93 @@
+<html class="loading" lang="en" data-textdirection="ltr">
+
+<app-header></app-header>
+
+
+<app-sidebar></app-sidebar>
+
+<div id="main">
+   <div class="row">
+     <div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
+     <div class="breadcrumbs-dark pb-0 pt-4" id="breadcrumbs-wrapper">
+       <!-- Search for small screen-->
+       <div class="container">
+         <div class="row">
+           <div class="col s10 m6 l6">
+             <h5 class="breadcrumbs-title mt-0 mb-0">iStyle Agent Location</h5>
+             <ol class="breadcrumbs mb-0">
+               <li class="breadcrumb-item"><a href="/dashboard">Home</a>
+               </li>
+               <li class="breadcrumb-item"><a href="#">Apps</a>
+               </li>
+               <li class="breadcrumb-item active">iStyle Agent Location
+                                 </li>
+             </ol>
+           </div>
+        
+         </div>
+       </div>
+     </div>
+ 
+     <div class="row">
+      <div class="col s12">
+        <div id="icon-prefixes" class="card card-tabs">
+          <div class="card-content">
+            <div class="card-title">
+              <div class="row">
+                <div class="col s12 m6 l10">
+                  <h4 class="card-title" >Location</h4>
+                </div>
+             
+              </div>
+            </div>
+           
+            <div id="view-icon-prefixes" class="active">
+              <p>You can select location here and get a nearby or close iStyle Agent, our iStyle Agent is waiting for your request
+              <br>
+              <div class="row">
+                <form class="col s6 m6" routerlink="/dashboard" >
+                  <div class="row">
+                   <!-- <div class="input-field col s12 offset-s6">
+                      <i class="material-icons prefix">home</i>
+                      <input  type="text" class="validate" value="58, Alhaji Salami Street, Surulere, Lagos State" >
+                      <small>Your default location, the location you filled at the point of registration</small>
+                    </div>-->
+                    
+                    
+                    <div class="input-field col s12 offset-s6">
+                     <i class="material-icons prefix">home</i>
+                     <input id="icon_telephone" type="text" class="validate">
+                    
+                     <small>Enter your location to get the nearby iStyle Vendor around you, you can also click on the check button to get your current location</small><br><hr>
+                     <p> <label style="float:right">
+                        <input type="checkbox">
+                        <span>Click to get the current location</span>
+                      </label></p>
+                     <label for="icon_telephone">Enter Location</label>
+                   </div>
+
+                   
+                  </div>
+                 
+                  
+                  
+                </form>
+            
+              </div>
+            
+            </div>
+           <a (click)="onSubmit()" class="btn mb-1 waves-effect waves-light gradient-45deg-light-blue-cyan border-round mr-1 mb-1" type="submit" name="action">Continue
+                     <i class="material-icons right">send</i></a>
+
+                   
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+ </div>
+ <!-- END: Page Main-->
+<app-footer></app-footer>
+
+
+</html> 
